@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #4e4b4b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  margin: auto;
+  color: #000000;
+  font-weight: bolder;
+  font-family: tahoma;
+  font-size: 40px;
+  text-shadow: 2px 2px 1px #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  /* animation move heading */ 
+  animation: moveHeading 5s forwards;
+}
+
+@keyframes moveHeading {
+  0% { 
+    transform: translateY(-200px); 
+  }
+  100% { 
+    transform: translateY(100px); 
+  }
+}
+
+
+
+
+.mode {
+  width: 80%;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.mode button { 
+  width: 80px;
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000000;
+  transition: background-color 0.3s ease;
+}
+
+.red { 
+  background-color: red; 
+}
+
+.blue {
+  background-color: blue; 
+}
+
+.green { 
+  background-color: green; 
+}
+
+.yellow { 
+  background-color: yellow; color: black; 
+}
+
+.purple { 
+  background-color: purple;
+
+}
+.orange { 
+  background-color: orange; 
+}
+
+.pink { 
+  background-color: pink; color: black; 
+}
+
+.mode button:hover {
+  background-color: #ddd;
+}
+
+.mode button:active {
+  background-color: #151414;
+  transform: translateY(2px);
+}
+
+.mode button:focus {
+  outline: none;
+  box-shadow: 0.5px 0.5px 5px 2px rgba(255, 255, 255, 0.5);
+}
+
+
